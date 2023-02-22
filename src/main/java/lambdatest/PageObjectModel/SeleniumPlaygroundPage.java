@@ -22,6 +22,9 @@ public class SeleniumPlaygroundPage {
     @FindBy(xpath = "//a[contains(text(),'Drag & Drop Sliders')]")
     WebElement dragAndDropElement;
 
+    @FindBy(xpath = "//a[contains(text(),'Input Form Submit')]")
+    WebElement inputFormSubmitElement;
+
 
     public void goTo(){
         driver.get("https://www.lambdatest.com/selenium-playground");
@@ -35,5 +38,10 @@ public class SeleniumPlaygroundPage {
     public DragAndDropSlider openDragAndDrop(){
         dragAndDropElement.click();
         return new DragAndDropSlider(driver);
+    }
+
+    public InputFormSubmit openInputFormSubmit(){
+        inputFormSubmitElement.click();
+        return new InputFormSubmit(driver);
     }
 }
