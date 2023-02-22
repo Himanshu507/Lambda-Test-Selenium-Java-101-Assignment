@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-23T01:31:13 IST" name="Suite" finished-at="2023-02-23T01:31:24 IST" duration-ms="10639">
+    <groups>
+    </groups>
+    <test started-at="2023-02-23T01:31:13 IST" name="Test" finished-at="2023-02-23T01:31:24 IST" duration-ms="10639">
+      <class name="lambdatest.Tests.TestScenario1">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lambdatest.Tests.TestScenario1@add0edd]" started-at="2023-02-23T01:31:13 IST" name="setup" finished-at="2023-02-23T01:31:16 IST" duration-ms="2116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@add0edd]" started-at="2023-02-23T01:31:16 IST" name="validateUrl" finished-at="2023-02-23T01:31:16 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUrl -->
+        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@add0edd]" started-at="2023-02-23T01:31:16 IST" name="validateMessage" finished-at="2023-02-23T01:31:16 IST" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@add0edd]" started-at="2023-02-23T01:31:16 IST" name="teardown" finished-at="2023-02-23T01:31:16 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario1 -->
+      <class name="lambdatest.Tests.TestScenario2">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lambdatest.Tests.TestScenario2@2aa3cd93]" started-at="2023-02-23T01:31:16 IST" name="setup" finished-at="2023-02-23T01:31:17 IST" duration-ms="994" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@2aa3cd93]" started-at="2023-02-23T01:31:17 IST" name="dragAndDrop" finished-at="2023-02-23T01:31:22 IST" duration-ms="4751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@2aa3cd93]" started-at="2023-02-23T01:31:22 IST" name="teardown" finished-at="2023-02-23T01:31:22 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario2 -->
+      <class name="lambdatest.Tests.TestScenario3">
+        <test-method is-config="true" signature="setup()[pri:0, instance:lambdatest.Tests.TestScenario3@7ea37dbf]" started-at="2023-02-23T01:31:22 IST" name="setup" finished-at="2023-02-23T01:31:23 IST" duration-ms="991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@7ea37dbf]" started-at="2023-02-23T01:31:23 IST" name="SubmitData" finished-at="2023-02-23T01:31:24 IST" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitData -->
+        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@7ea37dbf]" started-at="2023-02-23T01:31:24 IST" name="checkFieldsMsg" finished-at="2023-02-23T01:31:24 IST" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFieldsMsg -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@7ea37dbf]" started-at="2023-02-23T01:31:24 IST" name="teardown" finished-at="2023-02-23T01:31:24 IST" duration-ms="55" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario3 -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

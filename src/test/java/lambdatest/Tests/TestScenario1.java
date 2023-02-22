@@ -22,7 +22,6 @@ public class TestScenario1 extends BaseTest {
         simpleFormDemo.setMsg(msg);
         simpleFormDemo.clickMsgButton();
         Assert.assertEquals(simpleFormDemo.displayedMessage(),msg);
-
     }
 
 }

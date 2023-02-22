@@ -17,7 +17,7 @@ public class SeleniumPlaygroundPage {
 
 
     @FindBy(xpath = "//a[contains(text(),'Simple Form Demo')]")
-    WebElement simple_form_demo;
+    WebElement simpleFormDemoElement;
 
     @FindBy(xpath = "//a[contains(text(),'Drag & Drop Sliders')]")
     WebElement dragAndDropElement;
@@ -31,7 +31,7 @@ public class SeleniumPlaygroundPage {
     }
 
     public SimpleFormDemo openSimpleFormDemo(){
-        simple_form_demo.click();
+        simpleFormDemoElement.click();
         return new SimpleFormDemo(driver);
     }
 
