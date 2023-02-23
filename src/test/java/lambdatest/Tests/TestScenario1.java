@@ -1,12 +1,10 @@
 package lambdatest.Tests;
-
 import lambdatest.PageObjectModel.SimpleFormDemo;
 import lambdatest.TestComponents.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class TestScenario1 extends BaseTest {
-
 
     SimpleFormDemo simpleFormDemo;
     @Test

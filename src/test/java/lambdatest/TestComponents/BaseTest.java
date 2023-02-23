@@ -8,15 +8,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 public class BaseTest {
 
-    public WebDriver driver;
+    //public WebDriver driver;
     public SeleniumPlaygroundPage seleniumPlaygroundPage;
+
+    public String username = "h1235p";
+    public String accesskey = "DionVbI11pwVpHEyyXHNiXjWmZNPDsyAHOCvchdzE0hmEISlOE";
+    public static RemoteWebDriver driver = null;
+    public String gridURL = "@hub.lambdatest.com/wd/hub";
+    boolean status = false;
+
 
     public void intialize_driver(){
 
@@ -45,7 +57,20 @@ public class BaseTest {
     //@BeforeTest(alwaysRun = true)
     @BeforeClass(alwaysRun = true)
     public void setup(){
-        intialize_driver();
+        DesiredCapabilities capabilities = new DesiredCapabilities();
+        capabilities.setCapability("browserName", "chrome");
+        capabilities.setCapability("version", "70.0");
+        capabilities.setCapability("platform", "win10"); // If this cap isn't specified, it will just get the any available one
+        capabilities.setCapability("build", "SeleniumJava101Assignment");
+        capabilities.setCapability("name", "SeleniumJava101Assignment");
+
+        try {
+            driver = new RemoteWebDriver(new URL("https://" + username + ":" + accesskey + gridURL), capabilities);
+        } catch (MalformedURLException e) {
+            System.out.println("Invalid grid URL");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
         seleniumPlaygroundPage = new SeleniumPlaygroundPage(driver);
         seleniumPlaygroundPage.goTo();
     }
