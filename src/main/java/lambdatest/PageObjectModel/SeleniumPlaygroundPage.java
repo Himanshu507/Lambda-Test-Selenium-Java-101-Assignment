@@ -1,16 +1,25 @@
 package lambdatest.PageObjectModel;
 
+import lambdatest.AbstractComponents.AbstractComponent;
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.PageFactoryFinder;
 
-public class SeleniumPlaygroundPage {
+import java.time.Duration;
 
-    WebDriver driver;
+public class SeleniumPlaygroundPage extends AbstractComponent {
 
-    public SeleniumPlaygroundPage(WebDriver driver) {
+    RemoteWebDriver driver;
+
+    //public WebDriver driver;
+    public SeleniumPlaygroundPage(RemoteWebDriver driver) {
+        super(driver);
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
@@ -28,6 +37,16 @@ public class SeleniumPlaygroundPage {
 
     public void goTo(){
         driver.get("https://www.lambdatest.com/selenium-playground");
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("var event = new MouseEvent('mouseleave', {view: window, bubbles: true, cancelable: true}); document.body.dispatchEvent(event);");
+        Actions action = new Actions(driver);
+        waitForPopUp(Duration.ofSeconds(10));
+        action.moveToElement(driver.findElement(By.cssSelector("span#exit_popup_close"))).click().perform();
     }
 
     public SimpleFormDemo openSimpleFormDemo(){

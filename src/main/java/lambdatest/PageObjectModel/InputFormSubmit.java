@@ -1,20 +1,23 @@
 package lambdatest.PageObjectModel;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import lambdatest.AbstractComponents.AbstractComponent;
+import org.openqa.selenium.*;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import java.time.Duration;
 import java.util.List;
 
-public class InputFormSubmit {
+public class InputFormSubmit{
 
-    WebDriver driver;
+    RemoteWebDriver driver;
+    //public WebDriver driver;
 
-    public InputFormSubmit(WebDriver driver) {
+    public InputFormSubmit(RemoteWebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
     @FindBy(xpath = "//button[normalize-space()='Submit']")
@@ -44,26 +47,33 @@ public class InputFormSubmit {
     @FindBy(id = "inputAddress1")
     WebElement addressElement1;
 
-    @FindBy(id="inputAddress2")
+    @FindBy(id = "inputAddress2")
     WebElement addressElement2;
 
-    @FindBy(id="inputState")
+    @FindBy(id = "inputState")
     WebElement stateElement;
 
-    @FindBy(id="inputZip")
+    @FindBy(id = "inputZip")
     WebElement zipcodeElement;
 
     @FindBy(css = "p.success-msg")
     WebElement successElement;
 
-    public String clickBlankSubmitButton(){
+    @FindBy(css = "div#exit_popup_dismissed")
+    WebElement checkPopup;
+
+    String successMessage;
+
+    public String clickBlankSubmitButton() throws InterruptedException {
+
         submitBtnElement.click();
         String msg = nameElement.getAttribute("validationMessage");
         return msg;
     }
 
 
-    public String setData(String name, String email, String pass, String company, String website, String country, String city, String add1, String add2, String state, String zip){
+    public String setData(String name, String email, String pass, String company, String website, String country, String city, String add1, String add2, String state, String zip) {
+
         nameElement.clear();
         nameElement.sendKeys(name);
         emailElement.clear();
@@ -74,7 +84,6 @@ public class InputFormSubmit {
         companyElement.sendKeys(company);
         websiteElement.clear();
         websiteElement.sendKeys(website);
-
         Select select = new Select(countryElement);
         select.selectByVisibleText(country);
         cityElement.clear();
@@ -88,9 +97,8 @@ public class InputFormSubmit {
         zipcodeElement.clear();
         zipcodeElement.sendKeys(zip);
         submitBtnElement.click();
-
-        return successElement.getText();
+        successMessage = successElement.getText();
+        return successMessage;
     }
-
 
 }

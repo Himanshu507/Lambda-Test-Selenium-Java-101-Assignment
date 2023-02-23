@@ -2,15 +2,17 @@ package lambdatest.PageObjectModel;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SimpleFormDemo {
 
 
-    public WebDriver driver;
+    public RemoteWebDriver driver;
 
-    public SimpleFormDemo(WebDriver driver) {
+    //public WebDriver driver;
+    public SimpleFormDemo(RemoteWebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }

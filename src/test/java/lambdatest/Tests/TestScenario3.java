@@ -10,16 +10,16 @@ public class TestScenario3 extends BaseTest {
 
     InputFormSubmit inputFormSubmit;
 
-    @Test
-    public void checkFieldsMsg(){
+    @Test(timeOut = 20000)
+    public void checkFieldsMsg() throws InterruptedException {
         inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
         SoftAssert softassert = new SoftAssert();
         softassert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
     }
 
-    @Test
+    @Test(dependsOnMethods = {"checkFieldsMsg"})
     public void SubmitData(){
-        InputFormSubmit inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
+        //InputFormSubmit inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
         String name = "Himanshu";
         String email = "h123p@gmail.com";
         String pass = "abc123";
