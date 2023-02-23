@@ -74,27 +74,27 @@ public class InputFormSubmit{
 
     public String setData(String name, String email, String pass, String company, String website, String country, String city, String add1, String add2, String state, String zip) {
 
-        nameElement.clear();
+        //nameElement.clear();
         nameElement.sendKeys(name);
-        emailElement.clear();
+        //emailElement.clear();
         emailElement.sendKeys(email);
-        passElement.clear();
+        //passElement.clear();
         passElement.sendKeys(pass);
-        companyElement.clear();
+        //companyElement.clear();
         companyElement.sendKeys(company);
-        websiteElement.clear();
+        //websiteElement.clear();
         websiteElement.sendKeys(website);
         Select select = new Select(countryElement);
         select.selectByVisibleText(country);
-        cityElement.clear();
+        //cityElement.clear();
         cityElement.sendKeys(city);
-        addressElement1.clear();
+        //addressElement1.clear();
         addressElement1.sendKeys(add1);
-        addressElement2.clear();
+        //addressElement2.clear();
         addressElement2.sendKeys(add2);
-        stateElement.clear();
+        //stateElement.clear();
         stateElement.sendKeys(state);
-        zipcodeElement.clear();
+        //zipcodeElement.clear();
         zipcodeElement.sendKeys(zip);
         submitBtnElement.click();
         successMessage = successElement.getText();
