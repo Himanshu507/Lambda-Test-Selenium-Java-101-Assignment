@@ -63,19 +63,8 @@ public class BaseTest {
     @BeforeClass(alwaysRun = true)
     public void setup(String browser, String version, String platform){
         String browserName = browser;//"chrome";
-//        if(System.getProperty("browser")!=null){
-//            browserName = System.getProperty("browser");
-//        }
-
         String browserVersion = version;//"88.0";
-//        if(System.getProperty("browserVersion")!=null){
-//            browserVersion = System.getProperty("browserVersion");
-//        }
-
         String platformName = platform;//"win10";
-//        if(System.getProperty("platform")!=null){
-//            platformName = System.getProperty("platform");
-//        }
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", browserName);
