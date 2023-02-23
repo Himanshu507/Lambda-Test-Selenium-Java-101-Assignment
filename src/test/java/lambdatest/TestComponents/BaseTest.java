@@ -11,10 +11,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeTest;
+import org.testng.annotations.*;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -57,22 +54,23 @@ public class BaseTest {
     }
 
     //@BeforeTest(alwaysRun = true)
+    @Parameters({ "browser", "version", "platform"})
     @BeforeClass(alwaysRun = true)
-    public void setup(){
-        String browserName = "chrome";
-        if(System.getProperty("browser")!=null){
-            browserName = System.getProperty("browser");
-        }
+    public void setup(String browser, String version, String platform){
+        String browserName = browser;//"chrome";
+//        if(System.getProperty("browser")!=null){
+//            browserName = System.getProperty("browser");
+//        }
 
-        String browserVersion = "88.0";
-        if(System.getProperty("browserVersion")!=null){
-            browserVersion = System.getProperty("browserVersion");
-        }
+        String browserVersion = version;//"88.0";
+//        if(System.getProperty("browserVersion")!=null){
+//            browserVersion = System.getProperty("browserVersion");
+//        }
 
-        String platformName = "win10";
-        if(System.getProperty("platform")!=null){
-            platformName = System.getProperty("platform");
-        }
+        String platformName = platform;//"win10";
+//        if(System.getProperty("platform")!=null){
+//            platformName = System.getProperty("platform");
+//        }
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("browserName", browserName);
