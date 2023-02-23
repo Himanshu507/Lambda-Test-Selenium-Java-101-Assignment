@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" name="LambdaTest" parallel="tests">
-    <test name="WIN10TEST">
+
+    <test name="WIN10TEST" parallel = "classes" thread-count = "3" >
         <parameter name="browser" value="chrome"/>
         <parameter name="version" value="88.0"/>
         <parameter name="platform" value="WIN10"/>
@@ -12,7 +13,8 @@
             <class name="lambdatest.Tests.TestScenario3" />
         </classes>
     </test> <!-- Test -->
-    <test name="MACOSTEST">
+
+    <test name="MACOSTEST" parallel = "classes" thread-count = "3" >
         <parameter name="browser" value="MicrosoftEdge"/>
         <parameter name="version" value="87.0"/>
         <parameter name="platform" value="macOS Sierra"/>
@@ -24,7 +26,7 @@
         </classes>
     </test>
 
-    <test name="WIN7TEST">
+    <test name="WIN7TEST" parallel = "classes" thread-count = "3" >
         <parameter name="browser" value="firefox"/>
         <parameter name="version" value="82.0"/>
         <parameter name="platform" value="Windows 7"/>
@@ -36,7 +38,7 @@
         </classes>
     </test>
 
-    <test name="WIN10EXPLORERTEST">
+    <test name="WIN10EXPLORERTEST" parallel = "classes" thread-count = "3" >
         <parameter name="browser" value="Internet Explorer"/>
         <parameter name="version" value="11.0"/>
         <parameter name="platform" value="Windows 10"/>

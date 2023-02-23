@@ -19,7 +19,7 @@ public class TestScenario3 extends BaseTest {
 
     }
 
-    @Test(dependsOnMethods = {"checkFieldsMsg"})
+    @Test(dependsOnMethods = {"checkFieldsMsg"},timeOut = 20000)
     public void SubmitData(){
         //InputFormSubmit inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
         String name = "Himanshu";
@@ -36,7 +36,6 @@ public class TestScenario3 extends BaseTest {
         String expected_success = "Thanks for contacting us, we will get back to you shortly.";
         String confirmationMsg = inputFormSubmit.setData(name,email,pass,company,website,country,city,add1,add2,state,zip);
         Assert.assertEquals(confirmationMsg,expected_success);
-
     }
 
 
