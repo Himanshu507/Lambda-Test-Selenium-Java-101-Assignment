@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+            <a href="#" panel-name="suite-LambdaTest" class="navigator-link">
+              <span class="suite-name border-failed">LambdaTest</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" panel-name="test-xml-LambdaTest" class="navigator-link ">
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" panel-name="testlist-LambdaTest" class="navigator-link ">
+                    <span class="test-stats">4 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-LambdaTest" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-LambdaTest" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-LambdaTest" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-LambdaTest" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-LambdaTest" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,41 +92,134 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">20 methods, 3 failed,  11 skipped,  6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-LambdaTest" class="hide-methods failed suite-LambdaTest"> (hide)</a> <!-- hide-methods failed suite-LambdaTest -->
+                      <a href="#" panel-name="suite-LambdaTest" class="show-methods failed suite-LambdaTest"> (show)</a> <!-- show-methods failed suite-LambdaTest -->
+                    </span>
+                    <div class="method-list-content failed suite-LambdaTest">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario2" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateMessage">validateMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateMessage">validateMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-LambdaTest -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-LambdaTest" class="hide-methods skipped suite-LambdaTest"> (hide)</a> <!-- hide-methods skipped suite-LambdaTest -->
+                      <a href="#" panel-name="suite-LambdaTest" class="show-methods skipped suite-LambdaTest"> (show)</a> <!-- show-methods skipped suite-LambdaTest -->
+                    </span>
+                    <div class="method-list-content skipped suite-LambdaTest">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="SubmitData">SubmitData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="SubmitData">SubmitData</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="checkFieldsMsg">checkFieldsMsg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="checkFieldsMsg">checkFieldsMsg</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario2" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario2" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario2" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateMessage">validateMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateMessage">validateMessage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-LambdaTest -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-LambdaTest" class="hide-methods passed suite-LambdaTest"> (hide)</a> <!-- hide-methods passed suite-LambdaTest -->
+                      <a href="#" panel-name="suite-LambdaTest" class="show-methods passed suite-LambdaTest"> (show)</a> <!-- show-methods passed suite-LambdaTest -->
                     </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
+                    <div class="method-list-content passed suite-LambdaTest">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="SubmitData">SubmitData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="SubmitData">SubmitData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="checkFieldsMsg">checkFieldsMsg</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="SubmitData">SubmitData</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="lambdatest.Tests.TestScenario2" class="method navigator-link" hash-for-method="dragAndDrop">dragAndDrop</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="checkFieldsMsg">checkFieldsMsg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateMessage">validateMessage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario3" class="method navigator-link" hash-for-method="checkFieldsMsg">checkFieldsMsg</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-LambdaTest" title="lambdatest.Tests.TestScenario1" class="method navigator-link" hash-for-method="validateUrl">validateUrl</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-LambdaTest -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,10 +230,10 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+        <div panel-name="suite-LambdaTest" class="panel LambdaTest">
+          <div class="suite-LambdaTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">lambdatest.Tests.TestScenario2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -149,13 +242,22 @@
                   <a name="dragAndDrop">
                   </a> <!-- dragAndDrop -->
                   <span class="method-name">dragAndDrop</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [95] but found [96]
+	at lambdatest.Tests.TestScenario2.dragAndDrop(TestScenario2.java:16)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 24 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
+          </div> <!-- suite-LambdaTest-class-failed -->
+          <div class="suite-LambdaTest-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">lambdatest.Tests.TestScenario1</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -164,6 +266,286 @@
                   <a name="validateMessage">
                   </a> <!-- validateMessage -->
                   <span class="method-name">validateMessage</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-47-generic&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9b46ff0d2a0649ad132fd5e706012e8b, findElement {using=id, value=user-message}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at lambdatest.PageObjectModel.SimpleFormDemo.setMsg(SimpleFormDemo.java:35)
+	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMessage">
+                  </a> <!-- validateMessage -->
+                  <span class="method-name">validateMessage</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
+Build info: version: &apos;4.8.0&apos;, revision: &apos;267030adea&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-47-generic&apos;, java.version: &apos;11.0.17&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f88058f2-3a64-46df-b9ad-f027dae36713, findElement {using=id, value=user-message}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+	at lambdatest.PageObjectModel.SimpleFormDemo.setMsg(SimpleFormDemo.java:35)
+	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 21 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LambdaTest-class-failed -->
+          <div class="suite-LambdaTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">lambdatest.Tests.TestScenario2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDrop">
+                  </a> <!-- dragAndDrop -->
+                  <span class="method-name">dragAndDrop</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDrop">
+                  </a> <!-- dragAndDrop -->
+                  <span class="method-name">dragAndDrop</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDrop">
+                  </a> <!-- dragAndDrop -->
+                  <span class="method-name">dragAndDrop</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LambdaTest-class-skipped -->
+          <div class="suite-LambdaTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">lambdatest.Tests.TestScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMessage">
+                  </a> <!-- validateMessage -->
+                  <span class="method-name">validateMessage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@f736069 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@f736069]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateMessage">
+                  </a> <!-- validateMessage -->
+                  <span class="method-name">validateMessage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@1151e434 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@1151e434]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUrl">
+                  </a> <!-- validateUrl -->
+                  <span class="method-name">validateUrl</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUrl">
+                  </a> <!-- validateUrl -->
+                  <span class="method-name">validateUrl</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LambdaTest-class-skipped -->
+          <div class="suite-LambdaTest-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">lambdatest.Tests.TestScenario3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubmitData">
+                  </a> <!-- SubmitData -->
+                  <span class="method-name">SubmitData</span>
+                  <div class="stack-trace">java.lang.Throwable: Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@26e356f0 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@26e356f0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubmitData">
+                  </a> <!-- SubmitData -->
+                  <span class="method-name">SubmitData</span>
+                  <div class="stack-trace">java.lang.Throwable: Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@4659191b depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@4659191b]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFieldsMsg">
+                  </a> <!-- checkFieldsMsg -->
+                  <span class="method-name">checkFieldsMsg</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFieldsMsg">
+                  </a> <!-- checkFieldsMsg -->
+                  <span class="method-name">checkFieldsMsg</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-LambdaTest-class-skipped -->
+          <div class="suite-LambdaTest-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">lambdatest.Tests.TestScenario1</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateUrl">
+                  </a> <!-- validateUrl -->
+                  <span class="method-name">validateUrl</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -174,8 +556,8 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
+          </div> <!-- suite-LambdaTest-class-passed -->
+          <div class="suite-LambdaTest-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">lambdatest.Tests.TestScenario3</span>
@@ -190,113 +572,233 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="SubmitData">
+                  </a> <!-- SubmitData -->
+                  <span class="method-name">SubmitData</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkFieldsMsg">
+                  </a> <!-- checkFieldsMsg -->
+                  <span class="method-name">checkFieldsMsg</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="checkFieldsMsg">
                   </a> <!-- checkFieldsMsg -->
                   <span class="method-name">checkFieldsMsg</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-        </div> <!-- panel Surefire_suite -->
-        <div panel-name="test-xml-Surefire_suite" class="panel">
+          </div> <!-- suite-LambdaTest-class-passed -->
+        </div> <!-- panel LambdaTest -->
+        <div panel-name="test-xml-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/workspace/Lambda-Test-Selenium-Java-101-Assignment/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;LambdaTest&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;WIN10TEST&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;88.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;WIN10&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;lambdatest.TestComponents.BaseTest&quot;/&gt;
       &lt;class name=&quot;lambdatest.Tests.TestScenario1&quot;/&gt;
       &lt;class name=&quot;lambdatest.Tests.TestScenario2&quot;/&gt;
       &lt;class name=&quot;lambdatest.Tests.TestScenario3&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Surefire test --&gt;
-&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+  &lt;/test&gt; &lt;!-- WIN10TEST --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;MACOSTEST&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;MicrosoftEdge&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;87.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;macOS Sierra&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;lambdatest.TestComponents.BaseTest&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario1&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario2&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- MACOSTEST --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;WIN7TEST&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;82.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;Windows 7&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;lambdatest.TestComponents.BaseTest&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario1&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario2&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WIN7TEST --&gt;
+  &lt;test thread-count=&quot;3&quot; parallel=&quot;tests&quot; name=&quot;WIN10EXPLORERTEST&quot; verbose=&quot;0&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;Internet Explorer&quot;/&gt;
+    &lt;parameter name=&quot;version&quot; value=&quot;11.0&quot;/&gt;
+    &lt;parameter name=&quot;platform&quot; value=&quot;Windows 10&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;lambdatest.TestComponents.BaseTest&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario1&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario2&quot;/&gt;
+      &lt;class name=&quot;lambdatest.Tests.TestScenario3&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- WIN10EXPLORERTEST --&gt;
+&lt;/suite&gt; &lt;!-- LambdaTest --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Surefire_suite" class="panel">
+        <div panel-name="testlist-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Surefire suite</span>
+            <span class="header-content">Tests for LambdaTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (4 classes)</span>
+                <span class="test-name">WIN10TEST (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">MACOSTEST (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">WIN7TEST (4 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">WIN10EXPLORERTEST (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Surefire_suite" class="panel">
+        <div panel-name="group-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Surefire suite</span>
+            <span class="header-content">Groups for LambdaTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Surefire_suite" class="panel">
+        <div panel-name="times-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Surefire suite</span>
+            <span class="header-content">Times for LambdaTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Surefire_suite');
-function tableData_Surefire_suite() {
+suiteTableInitFunctions.push('tableData_LambdaTest');
+function tableData_LambdaTest() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(20);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SubmitData')
 data.setCell(0, 2, 'lambdatest.Tests.TestScenario3')
-data.setCell(0, 3, 5141);
+data.setCell(0, 3, 6417);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'checkFieldsMsg')
+data.setCell(1, 1, 'SubmitData')
 data.setCell(1, 2, 'lambdatest.Tests.TestScenario3')
-data.setCell(1, 3, 3639);
+data.setCell(1, 3, 4922);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateUrl')
-data.setCell(2, 2, 'lambdatest.Tests.TestScenario1')
-data.setCell(2, 3, 3293);
+data.setCell(2, 1, 'checkFieldsMsg')
+data.setCell(2, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(2, 3, 2455);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'dragAndDrop')
-data.setCell(3, 2, 'lambdatest.Tests.TestScenario2')
-data.setCell(3, 3, 2864);
+data.setCell(3, 1, 'checkFieldsMsg')
+data.setCell(3, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(3, 3, 2354);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateMessage')
-data.setCell(4, 2, 'lambdatest.Tests.TestScenario1')
-data.setCell(4, 3, 1099);
-window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+data.setCell(4, 1, 'dragAndDrop')
+data.setCell(4, 2, 'lambdatest.Tests.TestScenario2')
+data.setCell(4, 3, 2066);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'validateUrl')
+data.setCell(5, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(5, 3, 1632);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateUrl')
+data.setCell(6, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(6, 3, 1433);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'validateMessage')
+data.setCell(7, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(7, 3, 531);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'validateMessage')
+data.setCell(8, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(8, 3, 27);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'SubmitData')
+data.setCell(9, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'dragAndDrop')
+data.setCell(10, 2, 'lambdatest.Tests.TestScenario2')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'SubmitData')
+data.setCell(11, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'checkFieldsMsg')
+data.setCell(12, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'validateUrl')
+data.setCell(13, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'validateMessage')
+data.setCell(14, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'dragAndDrop')
+data.setCell(15, 2, 'lambdatest.Tests.TestScenario2')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'validateMessage')
+data.setCell(16, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(16, 3, 0);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'dragAndDrop')
+data.setCell(17, 2, 'lambdatest.Tests.TestScenario2')
+data.setCell(17, 3, 0);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'validateUrl')
+data.setCell(18, 2, 'lambdatest.Tests.TestScenario1')
+data.setCell(18, 3, 0);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'checkFieldsMsg')
+data.setCell(19, 2, 'lambdatest.Tests.TestScenario3')
+data.setCell(19, 3, 0);
+window.suiteTableData['LambdaTest']= { tableData: data, tableDiv: 'times-div-LambdaTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
-              <div id="times-div-Surefire_suite">
-              </div> <!-- times-div-Surefire_suite -->
+              <span class="suite-total-time">Total running time: 9 minutes</span>
+              <div id="times-div-LambdaTest">
+              </div> <!-- times-div-LambdaTest -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Surefire_suite" class="panel">
+        <div panel-name="reporter-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Surefire suite</span>
+            <span class="header-content">Reporter output for LambdaTest</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+        <div panel-name="ignored-methods-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Surefire_suite" class="panel">
+        <div panel-name="chronological-LambdaTest" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -304,54 +806,276 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome, 88.0, WIN10)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(firefox, 82.0, Windows 7)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateUrl</span>
-                <span class="method-start">26583 ms</span>
+                <span class="method-start">19727 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">validateMessage</span>
-                <span class="method-start">29880 ms</span>
+                <span class="method-name">validateUrl</span>
+                <span class="method-start">20249 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">30980 ms</span>
-              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lambdatest.Tests.TestScenario2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">32930 ms</span>
+                <span class="method-name">setup(firefox, 82.0, Windows 7)</span>
+                <span class="method-start">21162 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">21881 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">dragAndDrop</span>
-                <span class="method-start">50292 ms</span>
+                <span class="method-start">172471 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">53156 ms</span>
+                <span class="method-start">174544 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">55005 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(firefox, 82.0, Windows 7)</span>
+                <span class="method-start">176408 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateUrl</span>
+                <span class="method-start">181091 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome, 88.0, WIN10)</span>
+                <span class="method-start">181091 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">checkFieldsMsg</span>
-                <span class="method-start">82589 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">SubmitData</span>
-                <span class="method-start">86230 ms</span>
+                <span class="method-name">dragAndDrop</span>
+                <span class="method-start">201890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">91371 ms</span>
+                <span class="method-start">201891 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(MicrosoftEdge, 87.0, macOS Sierra)</span>
+                <span class="method-start">201891 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkFieldsMsg</span>
+                <span class="method-start">232204 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateMessage</span>
+                <span class="method-start">234661 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">234689 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SubmitData</span>
+                <span class="method-start">234713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">241131 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">242698 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateMessage</span>
+                <span class="method-start">356418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkFieldsMsg</span>
+                <span class="method-start">356418 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">teardown</span>
+                <span class="method-start">356950 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SubmitData</span>
+                <span class="method-start">357176 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">357177 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">361184 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">dragAndDrop</span>
+                <span class="method-start">361184 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(chrome, 88.0, WIN10)</span>
+                <span class="method-start">361185 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario2</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">422707 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateUrl</span>
+                <span class="method-start">422707 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">checkFieldsMsg</span>
+                <span class="method-start">460290 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateMessage</span>
+                <span class="method-start">462644 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SubmitData</span>
+                <span class="method-start">462645 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">462645 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">467568 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario2</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">dragAndDrop</span>
+                <span class="method-start">602783 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">602784 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(Internet Explorer, 11.0, Windows 10)</span>
+                <span class="method-start">602784 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">checkFieldsMsg</span>
+                <span class="method-start">782883 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario1</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">validateMessage</span>
+                <span class="method-start">782884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">782884 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">lambdatest.Tests.TestScenario3</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SubmitData</span>
+                <span class="method-start">782884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">teardown</span>
+                <span class="method-start">782885 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

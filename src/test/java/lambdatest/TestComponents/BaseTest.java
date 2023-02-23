@@ -54,6 +54,11 @@ public class BaseTest {
     }
 
     //@BeforeTest(alwaysRun = true)
+    /**
+     * @param browser
+     * @param version
+     * @param platform
+     */
     @Parameters({ "browser", "version", "platform"})
     @BeforeClass(alwaysRun = true)
     public void setup(String browser, String version, String platform){

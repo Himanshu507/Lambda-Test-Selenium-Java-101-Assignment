@@ -1,4 +1,71 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 95.916 s - in TestSuite
+Tests run: 29, Failures: 12, Errors: 0, Skipped: 11, Time elapsed: 783.795 s <<< FAILURE! - in TestSuite
+dragAndDrop(lambdatest.Tests.TestScenario2)  Time elapsed: 2.073 s  <<< FAILURE!
+java.lang.AssertionError: expected [95] but found [96]
+	at lambdatest.Tests.TestScenario2.dragAndDrop(TestScenario2.java:16)
+
+setup(lambdatest.Tests.TestScenario1)  Time elapsed: 8.619 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setup(lambdatest.Tests.TestScenario2)  Time elapsed: 20.799 s  <<< FAILURE!
+java.lang.NullPointerException
+
+validateMessage(lambdatest.Tests.TestScenario1)  Time elapsed: 0.027 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9b46ff0d2a0649ad132fd5e706012e8b, findElement {using=id, value=user-message}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
+	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+
+teardown(lambdatest.Tests.TestScenario1)  Time elapsed: 0.051 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [9b46ff0d2a0649ad132fd5e706012e8b, executeScript {script=lambda-status=false, args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
+
+setup(lambdatest.Tests.TestScenario3)  Time elapsed: 121.703 s  <<< FAILURE!
+java.lang.NullPointerException
+
+validateMessage(lambdatest.Tests.TestScenario1)  Time elapsed: 0.531 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f88058f2-3a64-46df-b9ad-f027dae36713, findElement {using=id, value=user-message}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
+	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+
+teardown(lambdatest.Tests.TestScenario1)  Time elapsed: 0.756 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [f88058f2-3a64-46df-b9ad-f027dae36713, executeScript {script=lambda-status=false, args=[]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
+
+setup(lambdatest.Tests.TestScenario2)  Time elapsed: 4.006 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setup(lambdatest.Tests.TestScenario1)  Time elapsed: 61.523 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setup(lambdatest.Tests.TestScenario2)  Time elapsed: 140.138 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setup(lambdatest.Tests.TestScenario3)  Time elapsed: 180.099 s  <<< FAILURE!
+java.lang.NullPointerException
+
