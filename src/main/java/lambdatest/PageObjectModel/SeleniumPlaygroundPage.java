@@ -37,6 +37,10 @@ public class SeleniumPlaygroundPage extends AbstractComponent {
 
     public void goTo(){
         driver.get("https://www.lambdatest.com/selenium-playground");
+        popUpClose();
+    }
+
+    public void popUpClose() {
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {
