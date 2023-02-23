@@ -16,8 +16,11 @@ public class TestScenario2 extends BaseTest {
         int getValue = dragAndDropSlider.getValue();
         if (value == getValue){
             status = true;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=passed");
+        }else {
+            ((JavascriptExecutor) driver).executeScript("lambda-status=failed");
         }
-        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
+
         Assert.assertEquals(getValue,value);
     }
 }

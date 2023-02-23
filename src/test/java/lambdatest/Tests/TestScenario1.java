@@ -14,10 +14,11 @@ public class TestScenario1 extends BaseTest {
         boolean contains = simpleFormDemo.validateFormDemoUrl();
         if (contains){
             status = true;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=passed");
         }else{
             status = false;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=failed");
         }
-        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertTrue(contains);
     }
 
@@ -29,10 +30,12 @@ public class TestScenario1 extends BaseTest {
         String getMsg = simpleFormDemo.displayedMessage();
         if (getMsg.equals(msg)){
             status = true;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=passed");
         }else{
             status = false;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=failed");
         }
-        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
+
         Assert.assertEquals(getMsg,msg);
 
     }

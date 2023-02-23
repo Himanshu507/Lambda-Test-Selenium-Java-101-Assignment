@@ -19,10 +19,11 @@ public class TestScenario3 extends BaseTest {
         String getMsg = inputFormSubmit.clickBlankSubmitButton();
         if (getMsg.equals("Please fill in the fields")){
             status = true;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=passed");
         }else{
             status = false;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=failed");
         }
-        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertEquals(getMsg,"Please fill in the fields"); //Please fill in this field.
 
     }
@@ -45,10 +46,11 @@ public class TestScenario3 extends BaseTest {
         String confirmationMsg = inputFormSubmit.setData(name,email,pass,company,website,country,city,add1,add2,state,zip);
         if (confirmationMsg.equals(expected_success)){
             status = true;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=passed");
         }else{
             status = false;
+            ((JavascriptExecutor) driver).executeScript("lambda-status=failed");
         }
-        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertEquals(confirmationMsg,expected_success);
     }
 
