@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 public class TestScenario2 extends BaseTest {
 
-    @Test
+    @Test(timeOut = 20000)
     public void dragAndDrop(){
         DragAndDropSlider dragAndDropSlider = seleniumPlaygroundPage.openDragAndDrop();
         int value = 95;
