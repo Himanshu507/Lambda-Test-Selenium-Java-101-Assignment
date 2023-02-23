@@ -2,6 +2,7 @@ package lambdatest.Tests;
 
 import lambdatest.PageObjectModel.InputFormSubmit;
 import lambdatest.TestComponents.BaseTest;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -21,6 +22,7 @@ public class TestScenario3 extends BaseTest {
         }else{
             status = false;
         }
+        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertEquals(getMsg,"Please fill in the fields"); //Please fill in this field.
 
     }
@@ -46,6 +48,7 @@ public class TestScenario3 extends BaseTest {
         }else{
             status = false;
         }
+        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertEquals(confirmationMsg,expected_success);
     }
 

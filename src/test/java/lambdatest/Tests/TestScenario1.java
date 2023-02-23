@@ -1,6 +1,7 @@
 package lambdatest.Tests;
 import lambdatest.PageObjectModel.SimpleFormDemo;
 import lambdatest.TestComponents.BaseTest;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -16,6 +17,7 @@ public class TestScenario1 extends BaseTest {
         }else{
             status = false;
         }
+        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertTrue(contains);
     }
 
@@ -30,6 +32,7 @@ public class TestScenario1 extends BaseTest {
         }else{
             status = false;
         }
+        ((JavascriptExecutor) driver).executeScript("lambda-status=" + status);
         Assert.assertEquals(getMsg,msg);
 
     }
