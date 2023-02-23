@@ -41,13 +41,15 @@ public class SeleniumPlaygroundPage extends AbstractComponent {
     }
 
     public void popUpClose() {
-        try {
-            Thread.sleep(1000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+//        try {
+//            Thread.sleep(1000);
+//        } catch (InterruptedException e) {
+//            throw new RuntimeException(e);
+//        }
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("var event = new MouseEvent('mouseleave', {view: window, bubbles: true, cancelable: true}); document.body.dispatchEvent(event);");
+        //js.executeScript("var event = new MouseEvent('mouseleave', {view: window, bubbles: true, cancelable: true}); document.body.dispatchEvent(event);");
+        js.executeScript("setTimeout(function() { var event = new MouseEvent('mouseleave', {view: window, bubbles: true, cancelable: true}); document.body.dispatchEvent(event); }, 1000);");
+
         Actions action = new Actions(driver);
         waitForPopUp(Duration.ofSeconds(10));
         action.moveToElement(driver.findElement(By.cssSelector("span#exit_popup_close"))).click().perform();

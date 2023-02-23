@@ -13,8 +13,10 @@ public class TestScenario3 extends BaseTest {
     @Test(timeOut = 20000)
     public void checkFieldsMsg() throws InterruptedException {
         inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
-        SoftAssert softassert = new SoftAssert();
-        softassert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
+        //SoftAssert softassert = new SoftAssert();
+        //softassert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
+        Assert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
+
     }
 
     @Test(dependsOnMethods = {"checkFieldsMsg"})
