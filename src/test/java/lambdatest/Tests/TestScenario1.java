@@ -11,6 +11,11 @@ public class TestScenario1 extends BaseTest {
     public void validateUrl(){
         simpleFormDemo = seleniumPlaygroundPage.openSimpleFormDemo();
         boolean contains = simpleFormDemo.validateFormDemoUrl();
+        if (contains){
+            status = true;
+        }else{
+            status = false;
+        }
         Assert.assertTrue(contains);
     }
 
@@ -19,7 +24,14 @@ public class TestScenario1 extends BaseTest {
         String msg = "Welcome To LambdaTest";
         simpleFormDemo.setMsg(msg);
         simpleFormDemo.clickMsgButton();
-        Assert.assertEquals(simpleFormDemo.displayedMessage(),msg);
+        String getMsg = simpleFormDemo.displayedMessage();
+        if (getMsg.equals(msg)){
+            status = true;
+        }else{
+            status = false;
+        }
+        Assert.assertEquals(getMsg,msg);
+
     }
 
 }

@@ -13,6 +13,9 @@ public class TestScenario2 extends BaseTest {
         int value = 95;
         dragAndDropSlider.setValue(value);
         int getValue = dragAndDropSlider.getValue();
+        if (value == getValue){
+            status = true;
+        }
         Assert.assertEquals(getValue,value);
     }
 }

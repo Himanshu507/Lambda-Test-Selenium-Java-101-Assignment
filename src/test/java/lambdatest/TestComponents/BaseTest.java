@@ -26,7 +26,7 @@ public class BaseTest {
     public String accesskey = "DionVbI11pwVpHEyyXHNiXjWmZNPDsyAHOCvchdzE0hmEISlOE";
     public RemoteWebDriver driver = null;
     public String gridURL = "@hub.lambdatest.com/wd/hub";
-    boolean status = false;
+    public boolean status = false;
 
 
     public void intialize_driver(){

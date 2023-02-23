@@ -15,7 +15,13 @@ public class TestScenario3 extends BaseTest {
         inputFormSubmit = seleniumPlaygroundPage.openInputFormSubmit();
         //SoftAssert softassert = new SoftAssert();
         //softassert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
-        Assert.assertEquals(inputFormSubmit.clickBlankSubmitButton(),"Please fill in the fields"); //Please fill in this field.
+        String getMsg = inputFormSubmit.clickBlankSubmitButton();
+        if (getMsg.equals("Please fill in the fields")){
+            status = true;
+        }else{
+            status = false;
+        }
+        Assert.assertEquals(getMsg,"Please fill in the fields"); //Please fill in this field.
 
     }
 
@@ -35,6 +41,11 @@ public class TestScenario3 extends BaseTest {
         String zip = "10001";
         String expected_success = "Thanks for contacting us, we will get back to you shortly.";
         String confirmationMsg = inputFormSubmit.setData(name,email,pass,company,website,country,city,add1,add2,state,zip);
+        if (confirmationMsg.equals(expected_success)){
+            status = true;
+        }else{
+            status = false;
+        }
         Assert.assertEquals(confirmationMsg,expected_success);
     }
 
