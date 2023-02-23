@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="3" parallel="tests" name="Failed suite [LambdaTest]" guice-stage="DEVELOPMENT" verbose="0">
-  <test thread-count="3" parallel="tests" name="MACOSTEST(failed)" verbose="0">
+  <test thread-count="3" parallel="classes" name="WIN10TEST(failed)" verbose="0">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="88.0"/>
+    <parameter name="platform" value="WIN10"/>
+    <classes>
+      <class name="lambdatest.Tests.TestScenario3">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="SubmitData"/>
+          <include name="checkFieldsMsg"/>
+        </methods>
+      </class> <!-- lambdatest.Tests.TestScenario3 -->
+    </classes>
+  </test> <!-- WIN10TEST(failed) -->
+  <test thread-count="3" parallel="classes" name="MACOSTEST(failed)" verbose="0">
     <parameter name="browser" value="MicrosoftEdge"/>
     <parameter name="version" value="87.0"/>
     <parameter name="platform" value="macOS Sierra"/>
     <classes>
-      <class name="lambdatest.Tests.TestScenario2">
-        <methods>
-          <include name="teardown"/>
-          <include name="dragAndDrop"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- lambdatest.Tests.TestScenario2 -->
-      <class name="lambdatest.Tests.TestScenario1">
+      <class name="lambdatest.Tests.TestScenario3">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="validateUrl"/>
-          <include name="validateMessage"/>
+          <include name="checkFieldsMsg"/>
+          <include name="SubmitData"/>
         </methods>
-      </class> <!-- lambdatest.Tests.TestScenario1 -->
+      </class> <!-- lambdatest.Tests.TestScenario3 -->
     </classes>
   </test> <!-- MACOSTEST(failed) -->
-  <test thread-count="3" parallel="tests" name="WIN7TEST(failed)" verbose="0">
+  <test thread-count="3" parallel="classes" name="WIN7TEST(failed)" verbose="0">
     <parameter name="browser" value="firefox"/>
     <parameter name="version" value="82.0"/>
     <parameter name="platform" value="Windows 7"/>
@@ -53,29 +61,7 @@
       </class> <!-- lambdatest.Tests.TestScenario1 -->
     </classes>
   </test> <!-- WIN7TEST(failed) -->
-  <test thread-count="3" parallel="tests" name="WIN10TEST(failed)" verbose="0">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="version" value="88.0"/>
-    <parameter name="platform" value="WIN10"/>
-    <classes>
-      <class name="lambdatest.Tests.TestScenario2">
-        <methods>
-          <include name="teardown"/>
-          <include name="dragAndDrop"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- lambdatest.Tests.TestScenario2 -->
-      <class name="lambdatest.Tests.TestScenario1">
-        <methods>
-          <include name="teardown"/>
-          <include name="setup"/>
-          <include name="validateUrl"/>
-          <include name="validateMessage"/>
-        </methods>
-      </class> <!-- lambdatest.Tests.TestScenario1 -->
-    </classes>
-  </test> <!-- WIN10TEST(failed) -->
-  <test thread-count="3" parallel="tests" name="WIN10EXPLORERTEST(failed)" verbose="0">
+  <test thread-count="3" parallel="classes" name="WIN10EXPLORERTEST(failed)" verbose="0">
     <parameter name="browser" value="Internet Explorer"/>
     <parameter name="version" value="11.0"/>
     <parameter name="platform" value="Windows 10"/>

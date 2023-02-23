@@ -1,489 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="20" passed="6" failed="3" skipped="11">
+<testng-results ignored="0" total="20" passed="6" failed="1" skipped="13">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-23T18:00:50 UTC" name="LambdaTest" finished-at="2023-02-23T18:13:53 UTC" duration-ms="782992">
+  <suite started-at="2023-02-23T20:50:57 UTC" name="LambdaTest" finished-at="2023-02-23T20:54:46 UTC" duration-ms="228610">
     <groups>
     </groups>
-    <test started-at="2023-02-23T18:00:50 UTC" name="MACOSTEST" finished-at="2023-02-23T18:04:53 UTC" duration-ms="242769">
+    <test started-at="2023-02-23T20:50:57 UTC" name="WIN10TEST" finished-at="2023-02-23T20:53:42 UTC" duration-ms="164486">
       <class name="lambdatest.Tests.TestScenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T18:00:50 UTC" name="setup" finished-at="2023-02-23T18:01:10 UTC" duration-ms="20248" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:53:36 UTC" duration-ms="159066" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[87.0]]>
+                <![CDATA[88.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Sierra]]>
+                <![CDATA[WIN10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T18:01:10 UTC" name="validateUrl" finished-at="2023-02-23T18:01:12 UTC" duration-ms="1632" status="PASS">
+        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T20:53:36 UTC" name="validateUrl" finished-at="2023-02-23T20:53:38 UTC" duration-ms="1862" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUrl -->
-        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T18:04:45 UTC" name="validateMessage" finished-at="2023-02-23T18:04:45 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="27" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at lambdatest.PageObjectModel.SimpleFormDemo.setMsg(SimpleFormDemo.java:35)
-at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T20:53:38 UTC" name="validateMessage" finished-at="2023-02-23T20:53:39 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="1103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMessage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T18:04:45 UTC" name="teardown" finished-at="2023-02-23T18:04:45 UTC" duration-ms="23" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
-at lambdatest.TestComponents.BaseTest.teardown(BaseTest.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T20:53:39 UTC" name="teardown" finished-at="2023-02-23T20:53:42 UTC" duration-ms="2330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario1 -->
       <class name="lambdatest.Tests.TestScenario2">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T18:01:12 UTC" name="setup" finished-at="2023-02-23T18:04:12 UTC" duration-ms="180009" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:51:15 UTC" duration-ms="17458" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[87.0]]>
+                <![CDATA[88.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Sierra]]>
+                <![CDATA[WIN10]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T18:04:12 UTC" name="dragAndDrop" finished-at="2023-02-23T18:04:12 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T20:51:15 UTC" name="dragAndDrop" finished-at="2023-02-23T20:51:18 UTC" duration-ms="3220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T18:04:12 UTC" name="teardown" finished-at="2023-02-23T18:04:12 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T20:51:18 UTC" name="teardown" finished-at="2023-02-23T20:51:20 UTC" duration-ms="1851" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario2 -->
       <class name="lambdatest.Tests.TestScenario3">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T18:04:12 UTC" name="setup" finished-at="2023-02-23T18:04:42 UTC" duration-ms="30313" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:52:17 UTC" duration-ms="79947" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[MicrosoftEdge]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[87.0]]>
+                <![CDATA[88.0]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[macOS Sierra]]>
+                <![CDATA[WIN10]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T18:04:42 UTC" name="checkFieldsMsg" finished-at="2023-02-23T18:04:45 UTC" duration-ms="2455" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFieldsMsg -->
-        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T18:04:45 UTC" name="SubmitData" finished-at="2023-02-23T18:04:51 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="6417" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SubmitData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T18:04:51 UTC" name="teardown" finished-at="2023-02-23T18:04:53 UTC" duration-ms="1531" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- lambdatest.Tests.TestScenario3 -->
-    </test> <!-- MACOSTEST -->
-    <test started-at="2023-02-23T18:00:50 UTC" name="WIN7TEST" finished-at="2023-02-23T18:06:47 UTC" duration-ms="357284">
-      <class name="lambdatest.Tests.TestScenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T18:00:50 UTC" name="setup" finished-at="2023-02-23T18:01:10 UTC" duration-ms="19718" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[82.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T18:01:10 UTC" name="validateUrl" finished-at="2023-02-23T18:01:11 UTC" duration-ms="1433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUrl -->
-        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T18:06:46 UTC" name="validateMessage" finished-at="2023-02-23T18:06:47 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="531" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
-at lambdatest.PageObjectModel.SimpleFormDemo.setMsg(SimpleFormDemo.java:35)
-at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateMessage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T18:06:47 UTC" name="teardown" finished-at="2023-02-23T18:06:47 UTC" duration-ms="224" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
-Build info: version: '4.8.0', revision: '267030adea'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:480)
-at lambdatest.TestComponents.BaseTest.teardown(BaseTest.java:105)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- lambdatest.Tests.TestScenario1 -->
-      <class name="lambdatest.Tests.TestScenario2">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T18:01:11 UTC" name="setup" finished-at="2023-02-23T18:03:42 UTC" duration-ms="151308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[82.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Windows 7]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T18:03:42 UTC" name="dragAndDrop" finished-at="2023-02-23T18:03:45 UTC" duration-ms="2066" status="FAIL">
+        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T20:52:17 UTC" name="checkFieldsMsg" finished-at="2023-02-23T20:52:20 UTC" duration-ms="2925" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [95] but found [96]]]>
+              <![CDATA[expected [Please fill in the fields] but found [Please fill out this field.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [95] but found [96]
+              <![CDATA[java.lang.AssertionError: expected [Please fill in the fields] but found [Please fill out this field.]
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.failNotEquals(Assert.java:1577)
 at org.testng.Assert.assertEqualsImpl(Assert.java:149)
 at org.testng.Assert.assertEquals(Assert.java:131)
-at org.testng.Assert.assertEquals(Assert.java:1418)
-at org.testng.Assert.assertEquals(Assert.java:1382)
-at org.testng.Assert.assertEquals(Assert.java:1428)
-at lambdatest.Tests.TestScenario2.dragAndDrop(TestScenario2.java:16)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at lambdatest.Tests.TestScenario3.checkFieldsMsg(TestScenario3.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:47)
+at org.testng.internal.invokers.InvokeMethodRunnable.call(InvokeMethodRunnable.java:76)
+at org.testng.internal.invokers.InvokeMethodRunnable.run(InvokeMethodRunnable.java:33)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeoutWithNoExecutor(MethodInvocationHelper.java:345)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeWithTimeout(MethodInvocationHelper.java:301)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -492,14 +133,197 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- checkFieldsMsg -->
+        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T20:52:20 UTC" name="SubmitData" finished-at="2023-02-23T20:52:20 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@7fee8714 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@7fee8714]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@7fee8714 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@7fee8714]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T20:52:20 UTC" name="teardown" finished-at="2023-02-23T20:52:22 UTC" duration-ms="1901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario3 -->
+    </test> <!-- WIN10TEST -->
+    <test started-at="2023-02-23T20:50:57 UTC" name="MACOSTEST" finished-at="2023-02-23T20:53:59 UTC" duration-ms="181629">
+      <class name="lambdatest.Tests.TestScenario1">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:51:50 UTC" duration-ms="52695" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T20:51:50 UTC" name="validateUrl" finished-at="2023-02-23T20:51:52 UTC" duration-ms="2500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUrl -->
+        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T20:51:52 UTC" name="validateMessage" finished-at="2023-02-23T20:51:54 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="1508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@82de64a]" started-at="2023-02-23T20:51:54 UTC" name="teardown" finished-at="2023-02-23T20:51:56 UTC" duration-ms="2339" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario1 -->
+      <class name="lambdatest.Tests.TestScenario2">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:53:05 UTC" duration-ms="127765" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T20:53:05 UTC" name="dragAndDrop" finished-at="2023-02-23T20:53:08 UTC" duration-ms="2843" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T18:03:45 UTC" name="teardown" finished-at="2023-02-23T18:03:46 UTC" duration-ms="1864" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@659499f1]" started-at="2023-02-23T20:53:08 UTC" name="teardown" finished-at="2023-02-23T20:53:09 UTC" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario2 -->
       <class name="lambdatest.Tests.TestScenario3">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T18:03:46 UTC" name="setup" finished-at="2023-02-23T18:06:46 UTC" duration-ms="180009" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:53:59 UTC" duration-ms="181504" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[MicrosoftEdge]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[87.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[macOS Sierra]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T20:53:59 UTC" name="checkFieldsMsg" finished-at="2023-02-23T20:53:59 UTC" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkFieldsMsg -->
+        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T20:53:59 UTC" name="SubmitData" finished-at="2023-02-23T20:53:59 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@51e69659 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@51e69659]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@51e69659 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario3.checkFieldsMsg() on instance lambdatest.Tests.TestScenario3@51e69659]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubmitData -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@51e69659]" started-at="2023-02-23T20:53:59 UTC" name="teardown" finished-at="2023-02-23T20:53:59 UTC" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario3 -->
+    </test> <!-- MACOSTEST -->
+    <test started-at="2023-02-23T20:50:57 UTC" name="WIN7TEST" finished-at="2023-02-23T20:54:00 UTC" duration-ms="182999">
+      <class name="lambdatest.Tests.TestScenario1">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:53:59 UTC" duration-ms="181505" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -520,7 +344,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -531,13 +355,6 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -547,11 +364,11 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T18:06:46 UTC" name="checkFieldsMsg" finished-at="2023-02-23T18:06:46 UTC" duration-ms="0" status="SKIP">
+        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T20:53:59 UTC" name="validateUrl" finished-at="2023-02-23T20:53:59 UTC" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:87)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -562,13 +379,6 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -577,8 +387,307 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- validateUrl -->
+        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T20:53:59 UTC" name="validateMessage" finished-at="2023-02-23T20:53:59 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@4310d43 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@4310d43]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@4310d43 depends on not successfully finished methods 
+[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@4310d43]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateMessage -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@4310d43]" started-at="2023-02-23T20:53:59 UTC" name="teardown" finished-at="2023-02-23T20:53:59 UTC" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario1 -->
+      <class name="lambdatest.Tests.TestScenario2">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:53:58 UTC" duration-ms="180947" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[82.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [19a89537-bb00-4a2a-b01f-c2a2e80ed11d, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1340, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19a89537-bb00-4a2a-b01f-c2a2e80ed11d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [19a89537-bb00-4a2a-b01f-c2a2e80ed11d, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1340, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19a89537-bb00-4a2a-b01f-c2a2e80ed11d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T20:53:58 UTC" name="dragAndDrop" finished-at="2023-02-23T20:53:58 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [19a89537-bb00-4a2a-b01f-c2a2e80ed11d, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1340, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19a89537-bb00-4a2a-b01f-c2a2e80ed11d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [19a89537-bb00-4a2a-b01f-c2a2e80ed11d, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1340, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19a89537-bb00-4a2a-b01f-c2a2e80ed11d
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDrop -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@54a7079e]" started-at="2023-02-23T20:53:58 UTC" name="teardown" finished-at="2023-02-23T20:54:00 UTC" duration-ms="1927" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- lambdatest.Tests.TestScenario2 -->
+      <class name="lambdatest.Tests.TestScenario3">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T20:50:57 UTC" name="setup" finished-at="2023-02-23T20:52:46 UTC" duration-ms="108553" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[82.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Windows 7]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bb0e110-9359-44d8-8487-65105d79ea00, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3212, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bb0e110-9359-44d8-8487-65105d79ea00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bb0e110-9359-44d8-8487-65105d79ea00, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3212, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bb0e110-9359-44d8-8487-65105d79ea00
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T20:52:46 UTC" name="checkFieldsMsg" finished-at="2023-02-23T20:52:46 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bb0e110-9359-44d8-8487-65105d79ea00, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3212, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bb0e110-9359-44d8-8487-65105d79ea00]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [0bb0e110-9359-44d8-8487-65105d79ea00, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3212, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bb0e110-9359-44d8-8487-65105d79ea00
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:829)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- checkFieldsMsg -->
-        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T18:06:47 UTC" name="SubmitData" finished-at="2023-02-23T18:06:47 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="0" status="SKIP">
+        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T20:52:46 UTC" name="SubmitData" finished-at="2023-02-23T20:52:46 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@26e356f0 depends on not successfully finished methods 
@@ -590,13 +699,6 @@ at java.base/java.lang.Thread.run(Thread.java:829)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -606,250 +708,15 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T18:06:47 UTC" name="teardown" finished-at="2023-02-23T18:06:47 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@26e356f0]" started-at="2023-02-23T20:52:46 UTC" name="teardown" finished-at="2023-02-23T20:52:48 UTC" duration-ms="2237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario3 -->
     </test> <!-- WIN7TEST -->
-    <test started-at="2023-02-23T18:00:50 UTC" name="WIN10TEST" finished-at="2023-02-23T18:08:39 UTC" duration-ms="469496">
+    <test started-at="2023-02-23T20:53:42 UTC" name="WIN10EXPLORERTEST" finished-at="2023-02-23T20:54:46 UTC" duration-ms="64096">
       <class name="lambdatest.Tests.TestScenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T18:00:50 UTC" name="setup" finished-at="2023-02-23T18:03:51 UTC" duration-ms="181089" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[88.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[WIN10]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T18:03:51 UTC" name="validateUrl" finished-at="2023-02-23T18:03:51 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateUrl -->
-        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T18:08:33 UTC" name="validateMessage" finished-at="2023-02-23T18:08:33 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@f736069 depends on not successfully finished methods 
-[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@f736069]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@f736069 depends on not successfully finished methods 
-[lambdatest.Tests.TestScenario1.validateUrl() on instance lambdatest.Tests.TestScenario1@f736069]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateMessage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@f736069]" started-at="2023-02-23T18:08:33 UTC" name="teardown" finished-at="2023-02-23T18:08:33 UTC" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- lambdatest.Tests.TestScenario1 -->
-      <class name="lambdatest.Tests.TestScenario2">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T18:03:51 UTC" name="setup" finished-at="2023-02-23T18:06:51 UTC" duration-ms="180092" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[88.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[WIN10]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T18:06:51 UTC" name="dragAndDrop" finished-at="2023-02-23T18:06:51 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:829)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@6da21078]" started-at="2023-02-23T18:06:51 UTC" name="teardown" finished-at="2023-02-23T18:06:51 UTC" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- lambdatest.Tests.TestScenario2 -->
-      <class name="lambdatest.Tests.TestScenario3">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T18:06:51 UTC" name="setup" finished-at="2023-02-23T18:08:30 UTC" duration-ms="99105" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[88.0]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[WIN10]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T18:08:30 UTC" name="checkFieldsMsg" finished-at="2023-02-23T18:08:33 UTC" duration-ms="2354" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkFieldsMsg -->
-        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T18:08:33 UTC" name="SubmitData" finished-at="2023-02-23T18:08:38 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="4922" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SubmitData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@7fee8714]" started-at="2023-02-23T18:08:38 UTC" name="teardown" finished-at="2023-02-23T18:08:39 UTC" duration-ms="1821" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- lambdatest.Tests.TestScenario3 -->
-    </test> <!-- WIN10TEST -->
-    <test started-at="2023-02-23T18:04:53 UTC" name="WIN10EXPLORERTEST" finished-at="2023-02-23T18:13:53 UTC" duration-ms="540187">
-      <class name="lambdatest.Tests.TestScenario1">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T18:04:53 UTC" name="setup" finished-at="2023-02-23T18:07:53 UTC" duration-ms="180008" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T20:53:42 UTC" name="setup" finished-at="2023-02-23T20:54:22 UTC" duration-ms="40208" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -867,10 +734,44 @@ at java.base/java.lang.Thread.run(Thread.java:829)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [402106f8-b0d8-4ac2-9973-1d88b4aad488, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 402106f8-b0d8-4ac2-9973-1d88b4aad488]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [402106f8-b0d8-4ac2-9973-1d88b4aad488, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 402106f8-b0d8-4ac2-9973-1d88b4aad488
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -881,27 +782,54 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T18:07:53 UTC" name="validateUrl" finished-at="2023-02-23T18:07:53 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="validateUrl()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T20:54:22 UTC" name="validateUrl" finished-at="2023-02-23T20:54:22 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [402106f8-b0d8-4ac2-9973-1d88b4aad488, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 402106f8-b0d8-4ac2-9973-1d88b4aad488]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [402106f8-b0d8-4ac2-9973-1d88b4aad488, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 402106f8-b0d8-4ac2-9973-1d88b4aad488
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -912,23 +840,16 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateUrl -->
-        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T18:13:53 UTC" name="validateMessage" finished-at="2023-02-23T18:13:53 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="0" status="SKIP">
+        <test-method signature="validateMessage()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T20:54:22 UTC" name="validateMessage" finished-at="2023-02-23T20:54:22 UTC" depends-on-methods="lambdatest.Tests.TestScenario1.validateUrl" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method lambdatest.Tests.TestScenario1.validateMessage() on instance lambdatest.Tests.TestScenario1@1151e434 depends on not successfully finished methods 
@@ -940,13 +861,6 @@ at java.base/java.lang.Thread.run(Thread.java:829)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -956,13 +870,13 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateMessage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T18:13:53 UTC" name="teardown" finished-at="2023-02-23T18:13:53 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario1@1151e434]" started-at="2023-02-23T20:54:22 UTC" name="teardown" finished-at="2023-02-23T20:54:24 UTC" duration-ms="1715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario1 -->
       <class name="lambdatest.Tests.TestScenario2">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T18:07:53 UTC" name="setup" finished-at="2023-02-23T18:10:53 UTC" duration-ms="180076" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T20:53:42 UTC" name="setup" finished-at="2023-02-23T20:54:24 UTC" duration-ms="41972" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -980,10 +894,44 @@ at java.base/java.lang.Thread.run(Thread.java:829)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c8fde038-6e59-4761-8f1b-7ce88bd75312, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fde038-6e59-4761-8f1b-7ce88bd75312]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c8fde038-6e59-4761-8f1b-7ce88bd75312, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fde038-6e59-4761-8f1b-7ce88bd75312
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -994,27 +942,54 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T18:10:53 UTC" name="dragAndDrop" finished-at="2023-02-23T18:10:53 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="dragAndDrop()[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T20:54:24 UTC" name="dragAndDrop" finished-at="2023-02-23T20:54:24 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c8fde038-6e59-4761-8f1b-7ce88bd75312, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fde038-6e59-4761-8f1b-7ce88bd75312]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [c8fde038-6e59-4761-8f1b-7ce88bd75312, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fde038-6e59-4761-8f1b-7ce88bd75312
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1025,29 +1000,22 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dragAndDrop -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T18:10:53 UTC" name="teardown" finished-at="2023-02-23T18:10:53 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario2@2dc54ad4]" started-at="2023-02-23T20:54:24 UTC" name="teardown" finished-at="2023-02-23T20:54:25 UTC" duration-ms="1739" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- lambdatest.Tests.TestScenario2 -->
       <class name="lambdatest.Tests.TestScenario3">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T18:10:53 UTC" name="setup" finished-at="2023-02-23T18:13:53 UTC" duration-ms="180098" status="FAIL">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T20:53:42 UTC" name="setup" finished-at="2023-02-23T20:54:44 UTC" duration-ms="62320" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -1065,10 +1033,44 @@ at java.base/java.lang.Thread.run(Thread.java:829)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NullPointerException">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e1d8f59-ddf2-4ff1-91e0-69b4284204e3, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e1d8f59-ddf2-4ff1-91e0-69b4284204e3]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e1d8f59-ddf2-4ff1-91e0-69b4284204e3, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e1d8f59-ddf2-4ff1-91e0-69b4284204e3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1079,27 +1081,54 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T18:13:53 UTC" name="checkFieldsMsg" finished-at="2023-02-23T18:13:53 UTC" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="checkFieldsMsg()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T20:54:44 UTC" name="checkFieldsMsg" finished-at="2023-02-23T20:54:44 UTC" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e1d8f59-ddf2-4ff1-91e0-69b4284204e3, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e1d8f59-ddf2-4ff1-91e0-69b4284204e3]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:98)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e1d8f59-ddf2-4ff1-91e0-69b4284204e3, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e1d8f59-ddf2-4ff1-91e0-69b4284204e3
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at lambdatest.AbstractComponents.AbstractComponent.waitForPopUp(AbstractComponent.java:23)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.popUpClose(SeleniumPlaygroundPage.java:54)
+at lambdatest.PageObjectModel.SeleniumPlaygroundPage.goTo(SeleniumPlaygroundPage.java:40)
+at lambdatest.TestComponents.BaseTest.setup(BaseTest.java:89)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -1110,23 +1139,16 @@ at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigIn
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
 at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:180)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:122)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkFieldsMsg -->
-        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T18:13:53 UTC" name="SubmitData" finished-at="2023-02-23T18:13:53 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="1" status="SKIP">
+        <test-method signature="SubmitData()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T20:54:44 UTC" name="SubmitData" finished-at="2023-02-23T20:54:44 UTC" depends-on-methods="lambdatest.Tests.TestScenario3.checkFieldsMsg" duration-ms="0" status="SKIP">
           <exception class="java.lang.Throwable">
             <message>
               <![CDATA[Method lambdatest.Tests.TestScenario3.SubmitData() on instance lambdatest.Tests.TestScenario3@4659191b depends on not successfully finished methods 
@@ -1138,13 +1160,6 @@ at java.base/java.lang.Thread.run(Thread.java:829)
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:150)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 at java.base/java.lang.Thread.run(Thread.java:829)
@@ -1154,7 +1169,7 @@ at java.base/java.lang.Thread.run(Thread.java:829)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SubmitData -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T18:13:53 UTC" name="teardown" finished-at="2023-02-23T18:13:53 UTC" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:lambdatest.Tests.TestScenario3@4659191b]" started-at="2023-02-23T20:54:44 UTC" name="teardown" finished-at="2023-02-23T20:54:46 UTC" duration-ms="1772" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

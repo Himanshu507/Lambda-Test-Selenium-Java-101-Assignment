@@ -1,71 +1,69 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 12, Errors: 0, Skipped: 11, Time elapsed: 783.795 s <<< FAILURE! - in TestSuite
-dragAndDrop(lambdatest.Tests.TestScenario2)  Time elapsed: 2.073 s  <<< FAILURE!
-java.lang.AssertionError: expected [95] but found [96]
-	at lambdatest.Tests.TestScenario2.dragAndDrop(TestScenario2.java:16)
+Tests run: 27, Failures: 8, Errors: 0, Skipped: 13, Time elapsed: 229.595 s <<< FAILURE! - in TestSuite
+checkFieldsMsg(lambdatest.Tests.TestScenario3)  Time elapsed: 2.931 s  <<< FAILURE!
+java.lang.AssertionError: expected [Please fill in the fields] but found [Please fill out this field.]
+	at lambdatest.Tests.TestScenario3.checkFieldsMsg(TestScenario3.java:24)
 
-setup(lambdatest.Tests.TestScenario1)  Time elapsed: 8.619 s  <<< FAILURE!
-java.lang.NullPointerException
-
-setup(lambdatest.Tests.TestScenario2)  Time elapsed: 20.799 s  <<< FAILURE!
-java.lang.NullPointerException
-
-validateMessage(lambdatest.Tests.TestScenario1)  Time elapsed: 0.027 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
+setup(lambdatest.Tests.TestScenario3)  Time elapsed: 25.677 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
-	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+Command: [0bb0e110-9359-44d8-8487-65105d79ea00, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3212, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 0bb0e110-9359-44d8-8487-65105d79ea00
 
-teardown(lambdatest.Tests.TestScenario1)  Time elapsed: 0.051 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Unable to find the session info for particular sessionId 9b46ff0d2a0649ad132fd5e706012e8b, maybe session has quit already or timed out.
+setup(lambdatest.Tests.TestScenario2)  Time elapsed: 20.017 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate element: span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [9b46ff0d2a0649ad132fd5e706012e8b, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 87.0.664.41, ms:edgeOptions: {debuggerAddress: localhost:49337}, msedge: {msedgedriverVersion: 87.0.669.0 (9e7154764c4ca8c..., userDataDir: /var/folders/nl/mnqgh0js2xb...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdpVersion: 87.0.664.41, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 9b46ff0d2a0649ad132fd5e706012e8b
+Command: [19a89537-bb00-4a2a-b01f-c2a2e80ed11d, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 1340, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 19a89537-bb00-4a2a-b01f-c2a2e80ed11d
 
-setup(lambdatest.Tests.TestScenario3)  Time elapsed: 121.703 s  <<< FAILURE!
+setup(lambdatest.Tests.TestScenario1)  Time elapsed: 0.556 s  <<< FAILURE!
 java.lang.NullPointerException
 
-validateMessage(lambdatest.Tests.TestScenario1)  Time elapsed: 0.531 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
+setup(lambdatest.Tests.TestScenario3)  Time elapsed: 0.556 s  <<< FAILURE!
+java.lang.NullPointerException
+
+setup(lambdatest.Tests.TestScenario1)  Time elapsed: 23.096 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, findElement {using=id, value=user-message}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
-	at lambdatest.Tests.TestScenario1.validateMessage(TestScenario1.java:20)
+Command: [402106f8-b0d8-4ac2-9973-1d88b4aad488, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 402106f8-b0d8-4ac2-9973-1d88b4aad488
 
-teardown(lambdatest.Tests.TestScenario1)  Time elapsed: 0.756 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Unable to find the session info for particular sessionId f88058f2-3a64-46df-b9ad-f027dae36713, maybe session has quit already or timed out.
+setup(lambdatest.Tests.TestScenario2)  Time elapsed: 1.764 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.8.0', revision: '267030adea'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Command: [f88058f2-3a64-46df-b9ad-f027dae36713, executeScript {script=lambda-status=false, args=[]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 82.0, moz:accessibilityChecks: false, moz:buildID: 20201014125134, moz:geckodriverVersion: 0.30.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\ltuser\AppData\Loc..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platformName: WINDOWS, platformVersion: 6.1, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: f88058f2-3a64-46df-b9ad-f027dae36713
+Command: [c8fde038-6e59-4761-8f1b-7ce88bd75312, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: c8fde038-6e59-4761-8f1b-7ce88bd75312
 
-setup(lambdatest.Tests.TestScenario2)  Time elapsed: 4.006 s  <<< FAILURE!
-java.lang.NullPointerException
-
-setup(lambdatest.Tests.TestScenario1)  Time elapsed: 61.523 s  <<< FAILURE!
-java.lang.NullPointerException
-
-setup(lambdatest.Tests.TestScenario2)  Time elapsed: 140.138 s  <<< FAILURE!
-java.lang.NullPointerException
-
-setup(lambdatest.Tests.TestScenario3)  Time elapsed: 180.099 s  <<< FAILURE!
-java.lang.NullPointerException
+setup(lambdatest.Tests.TestScenario3)  Time elapsed: 20.347 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with css selector == span#exit_popup_close
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-47-generic', java.version: '11.0.17'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [3e1d8f59-ddf2-4ff1-91e0-69b4284204e3, findElement {using=css selector, value=span#exit_popup_close}]
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:41000/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 3e1d8f59-ddf2-4ff1-91e0-69b4284204e3
 
