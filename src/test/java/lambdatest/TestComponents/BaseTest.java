@@ -22,8 +22,8 @@ public class BaseTest {
     //public WebDriver driver;
     public SeleniumPlaygroundPage seleniumPlaygroundPage;
 
-    public String username = "h1235p";
-    public String accesskey = "DionVbI11pwVpHEyyXHNiXjWmZNPDsyAHOCvchdzE0hmEISlOE";
+    public String username = "h12345p";
+    public String accesskey = "";
     public RemoteWebDriver driver = null;
     public String gridURL = "@hub.lambdatest.com/wd/hub";
     public boolean status = false;
